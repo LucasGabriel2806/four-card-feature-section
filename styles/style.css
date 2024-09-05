@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    /* Primary */
+
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+
+    /* Neutral */
+
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+
+    /* Fontes */
+    
+    --fonte: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte);
+}
+
+body {
+    background-color: var(--very-light-gray);
+}
+
+header {
+    text-align: center;
+    margin-top: 80px;
+}
+
+h1, h2 {
+    color: var(--very-dark-blue);
+}
+
+header .h1-1, p {
+    font-weight: 200;
+}
+
+header p {
+    width: 550px;
+    margin: 20px auto 0;
+}
+
+main {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.container-center {
+    display: grid;
+    grid-template-rows: 1fr, 1fr;
+    gap: 30px;
+}
+
+.box {
+    height: 250px;
+    width: 350px;
+    padding: 30px;
+    position: relative;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.13);
+}
+
+.box h2 {
+    font-weight: 600;
+}
+
+.box.a {
+    border-top: 5px solid var(--cyan);
+    margin-right: 30px;
+}
+
+.box.b {
+    border-top: 5px solid var(--red);
+}
+
+.box.c {
+    border-top: 5px solid var(--orange);
+}
+
+.box.d {
+    border-top: 5px solid var(--blue);
+    margin-left: 30px;
+}
+
+img {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    position: absolute;
+    bottom: 0;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
